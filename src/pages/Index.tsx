@@ -6,7 +6,7 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState('home');
-  const [timeLeft, setTimeLeft] = useState(48 * 60 * 60);
+  const [timeLeft, setTimeLeft] = useState(33 * 60 * 60);
   const [downloadProgress, setDownloadProgress] = useState(45);
   const [downloadTime, setDownloadTime] = useState(82);
 
