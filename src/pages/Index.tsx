@@ -165,83 +165,147 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="max-w-3xl mx-auto space-y-6">
-              <Card className="p-8 bg-gradient-to-br from-purple-600/10 via-blue-600/10 to-orange-600/10 border-primary/30">
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="flex gap-3">
-                      <div className="w-14 h-14 rounded-xl bg-purple-500/20 flex items-center justify-center">
-                        <span className="text-2xl">🛍️</span>
+            <div className="max-w-6xl mx-auto">
+              <div className="grid lg:grid-cols-[1fr,400px] gap-6">
+                <Card className="p-8 bg-gradient-to-br from-purple-600/10 via-blue-600/10 to-orange-600/10 border-primary/30">
+                  <div className="space-y-6">
+                    <div className="flex items-start gap-4">
+                      <div className="flex gap-3">
+                        <div className="w-14 h-14 rounded-xl bg-purple-500/20 flex items-center justify-center">
+                          <span className="text-2xl">🛍️</span>
+                        </div>
+                        <div className="w-14 h-14 rounded-xl bg-blue-500/20 flex items-center justify-center">
+                          <span className="text-2xl">📦</span>
+                        </div>
                       </div>
-                      <div className="w-14 h-14 rounded-xl bg-blue-500/20 flex items-center justify-center">
-                        <span className="text-2xl">📦</span>
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-2">
-                        <h3 className="text-2xl font-bold">Приветствие от Ozon и Wildberries!</h3>
-                        <span className="px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-sm font-semibold border border-green-500/30">
-                          Новая
-                        </span>
-                      </div>
-                      <p className="text-muted-foreground leading-relaxed">
-                        Уважаемый партнёр! Мы рады сообщить о специальном предложении для вашего региона.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="p-6 rounded-xl bg-card/50 border border-border/50 space-y-4">
-                    <div className="flex items-start gap-3">
-                      <Icon name="Target" size={24} className="text-primary mt-1" />
-                      <div>
-                        <h4 className="font-bold text-lg mb-2">Цель задания:</h4>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-2">
+                          <h3 className="text-2xl font-bold">Приветствие от Ozon и Wildberries!</h3>
+                          <span className="px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-sm font-semibold border border-green-500/30">
+                            Новая
+                          </span>
+                        </div>
                         <p className="text-muted-foreground leading-relaxed">
-                          В вашем городе есть заявка на модернизацию аккаунта для продаж.
-                          Также есть возможность стать спонсором клиента и получить дополнительные бонусы.
+                          Уважаемый партнёр! Мы рады сообщить о специальном предложении для вашего региона.
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-3 p-4 rounded-lg bg-destructive/10 border border-destructive/20">
-                      <Icon name="AlertCircle" size={24} className="text-destructive" />
-                      <p className="font-semibold text-destructive">
-                        Заявка будет активна только 48 часов!
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center justify-center">
-                    <Button
-                      size="lg"
-                      className="text-lg px-8 py-6 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-green-500/50"
-                    >
-                      <Icon name="CheckCircle2" className="mr-2" size={24} />
-                      Заявка принята
-                    </Button>
-                  </div>
-
-                  <div className="p-6 rounded-xl bg-muted/30 border border-border/50">
-                    <div className="flex items-center gap-4">
-                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                        <Icon name="User" size={28} className="text-white" />
+                    <div className="p-6 rounded-xl bg-card/50 border border-border/50 space-y-4">
+                      <div className="flex items-start gap-3">
+                        <Icon name="Target" size={24} className="text-primary mt-1" />
+                        <div>
+                          <h4 className="font-bold text-lg mb-2">Цель задания:</h4>
+                          <p className="text-muted-foreground leading-relaxed">
+                            В вашем городе есть заявка на модернизацию аккаунта для продаж.
+                            Также есть возможность стать спонсором клиента и получить дополнительные бонусы.
+                          </p>
+                        </div>
                       </div>
-                      <div className="flex-1">
-                        <h4 className="font-bold text-lg">Контактное лицо:</h4>
-                        <p className="text-xl font-semibold mt-1">Александр Попов</p>
-                        <div className="flex items-center gap-2 mt-2">
-                          <Icon name="Phone" size={18} className="text-primary" />
-                          <a
-                            href="tel:+95312355234"
-                            className="text-primary hover:underline font-mono text-lg"
-                          >
-                            +7 (953) 123-552-34
-                          </a>
+
+                      <div className="flex items-center gap-3 p-4 rounded-lg bg-destructive/10 border border-destructive/20">
+                        <Icon name="AlertCircle" size={24} className="text-destructive" />
+                        <p className="font-semibold text-destructive">
+                          Заявка будет активна только 48 часов!
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center justify-center">
+                      <Button
+                        size="lg"
+                        className="text-lg px-8 py-6 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-green-500/50"
+                      >
+                        <Icon name="CheckCircle2" className="mr-2" size={24} />
+                        Заявка принята
+                      </Button>
+                    </div>
+
+                    <div className="p-6 rounded-xl bg-muted/30 border border-border/50">
+                      <div className="flex items-center gap-4">
+                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+                          <Icon name="User" size={28} className="text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-bold text-lg">Контактное лицо:</h4>
+                          <p className="text-xl font-semibold mt-1">Александр Попов</p>
+                          <div className="flex items-center gap-2 mt-2">
+                            <Icon name="Phone" size={18} className="text-primary" />
+                            <a
+                              href="tel:+95312355234"
+                              className="text-primary hover:underline font-mono text-lg"
+                            >
+                              +7 (953) 123-552-34
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                </Card>
+
+                <div className="space-y-6">
+                  <Card className="p-6 bg-gradient-to-br from-primary/10 to-accent/10 border-primary/30">
+                    <div className="space-y-4">
+                      <div className="flex items-center gap-3">
+                        <Icon name="Sparkles" size={24} className="text-primary" />
+                        <h3 className="text-xl font-bold">Цель спонсорства</h3>
+                      </div>
+                      
+                      <div className="space-y-4 text-sm">
+                        <div className="p-4 rounded-lg bg-card/50 border border-border/30">
+                          <h4 className="font-semibold mb-2 text-foreground">Суть предложения:</h4>
+                          <p className="text-muted-foreground leading-relaxed">
+                            Настоящая заявка направлена на привлечение спонсорской поддержки для модернизации аккаунтов компании на ведущих маркетплейсах. Приоритетной задачей является повышение эффективности присутствия на онлайн-платформах.
+                          </p>
+                        </div>
+
+                        <div className="p-4 rounded-lg bg-accent/10 border border-accent/30">
+                          <p className="text-muted-foreground leading-relaxed">
+                            В случае наличия возможности спонсорства, клиент выражает заинтересованность в приобретении специализированного оборудования для производства 3D-моделей на заказ.
+                          </p>
+                        </div>
+
+                        <div className="space-y-3">
+                          <h4 className="font-semibold text-foreground">Детали:</h4>
+                          
+                          <div className="flex items-start gap-2">
+                            <Icon name="ChevronRight" size={16} className="text-primary mt-0.5 flex-shrink-0" />
+                            <div>
+                              <span className="font-semibold text-foreground">Приоритет:</span>
+                              <p className="text-muted-foreground">Модернизация аккаунтов на маркетплейсах</p>
+                            </div>
+                          </div>
+
+                          <div className="flex items-start gap-2">
+                            <Icon name="ChevronRight" size={16} className="text-accent mt-0.5 flex-shrink-0" />
+                            <div>
+                              <span className="font-semibold text-foreground">Дополнительная возможность:</span>
+                              <p className="text-muted-foreground">Закупка оборудования для производства 3D-моделей на заказ (при наличии спонсорства)</p>
+                            </div>
+                          </div>
+
+                          <div className="flex items-start gap-2">
+                            <Icon name="ChevronRight" size={16} className="text-secondary mt-0.5 flex-shrink-0" />
+                            <div>
+                              <span className="font-semibold text-foreground">Финансовые условия:</span>
+                              <p className="text-muted-foreground">Сумма будет уточнена непосредственно у клиента</p>
+                            </div>
+                          </div>
+
+                          <div className="flex items-start gap-2">
+                            <Icon name="ChevronRight" size={16} className="text-secondary mt-0.5 flex-shrink-0" />
+                            <div>
+                              <span className="font-semibold text-foreground">Логистика:</span>
+                              <p className="text-muted-foreground">Подлежит уточнению с клиентом</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Card>
                 </div>
-              </Card>
+              </div>
             </div>
           </div>
         )}
